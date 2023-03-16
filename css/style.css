@@ -427,6 +427,13 @@ body {
 .team-icon:last-child {
   margin-right: 0;
 }
+.team-soc-link {
+  margin-right: 24px;
+  display: inline-block;
+}
+.team-soc-link:last-child {
+  margin-right: 0;
+}
 .logo-footer {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
@@ -456,9 +463,12 @@ body {
   padding-bottom: 16px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+}
+
+.clients-link {
   margin-right: 24px;
 }
-.client-icon:last-child {
+.clients-link:last-child {
   margin-right: 0;
 }
 
@@ -470,9 +480,15 @@ body {
   padding-bottom: 8px;
   fill: var(--primari-bg-color);
   background-color: var(--main-color);
+  /* margin-right: 16px; */
+}
+/* .footer-icon:last-child {
+  margin-right: 0;
+} */
+.social-link {
   margin-right: 16px;
 }
-.footer-icon:last-child {
+.social-link:last-child {
   margin-right: 0;
 }
 .title-footer {
