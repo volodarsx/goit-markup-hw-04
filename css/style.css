@@ -48,7 +48,6 @@ body {
 .conteiner-flex {
   max-width: 1158px;
   display: flex;
-  align-items: center;
 }
 
 .conteiner-address {
@@ -166,7 +165,6 @@ body {
 .hero {
   /* text-transform: uppercase; */
   /* background-color: var(--background-color); */
-  font-size: 44px;
   text-align: center;
   font-weight: 900;
   color: var(--primari-bg-color);
@@ -197,11 +195,13 @@ body {
   border: 0;
   border-radius: 4px;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
   background-color: var(--efect-color);
   color: var(--primari-bg-color);
   padding: 16px 32px;
+  font-weight: 500;
 }
 
 .button-hero:hover,
@@ -242,10 +242,13 @@ body {
 }
 
 .title-hero {
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   align-items: center;
   margin-bottom: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .filter-conteiner {
@@ -280,8 +283,10 @@ body {
 }
 
 .general-nav {
+  display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
+  align-items: center;
 }
 
 .nav-link + .nav-link {
@@ -292,13 +297,13 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
-.list-filter {
+/* .list-filter {
   display: ;
   margin-top: 56px;
   align-items: baseline;
   padding: 94px auto 50px;
   margin-right: 8px;
-}
+} */
 
 .carts-filter {
   background-color: var(--primari-bg-color);
@@ -414,25 +419,34 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.team-icon {
+.team-soc-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--primari-bg-color);
+}
+
+.team-soc-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.team-soc-item {
   width: 40px;
   height: 40px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 50%;
-  margin-right: 24px;
-  fill: var(--primari-bg-color);
-  background-color: var(--efect-color);
-}
-.team-icon:last-child {
-  margin-right: 0;
 }
 .team-soc-link {
-  margin-right: 24px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--efect-color);
 }
-.team-soc-link:last-child {
-  margin-right: 0;
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #404bbf;
 }
 .logo-footer {
   text-transform: uppercase;
@@ -445,7 +459,7 @@ body {
   padding-bottom: 120px;
 }
 .link-footer {
-  padding-bottom: 17.5px;
+  margin-bottom: 17.5px;
 }
 .customers {
   padding-top: 120px;
@@ -455,41 +469,69 @@ body {
   margin-bottom: 72px;
   text-align: center;
 }
-
-.client-icon {
-  width: 166px;
-  height: 88px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+/* ----------------------Clients---------------- */
+.clients-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.clients-item {
+  padding: 16px 32px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
+.clients-item:is(:hover, :focus) {
+  border-color: var(--efect-color);
+}
+.clients-item:is(:hover, :focus) .clients-link {
+  fill: var(--efect-color);
+}
+.client-icon {
+  width: 104px;
+  height: 56px;
+}
 
 .clients-link {
-  margin-right: 24px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: #8e8f99;
 }
-.clients-link:last-child {
-  margin-right: 0;
+/* .clients-link:is(:hover, :focus) {
+  
+} */
+
+/* ---------footers------------ */
+.social-footer {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #31d0aa;
 }
 
 .footer-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  fill: var(--primari-bg-color);
-  background-color: var(--main-color);
-  /* margin-right: 16px; */
-}
-/* .footer-icon:last-child {
-  margin-right: 0;
-} */
-.social-link {
-  margin-right: 16px;
-}
-.social-link:last-child {
-  margin-right: 0;
+  width: 16px;
+  height: 16px;
+  fill: var(--but-color);
 }
 .title-footer {
   color: var(--primari-bg-color);
