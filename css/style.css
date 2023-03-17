@@ -480,6 +480,14 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
+.clients-link {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: #8e8f99;
+}
 .clients-item:is(:hover, :focus) {
   border-color: var(--efect-color);
 }
@@ -491,14 +499,6 @@ body {
   height: 56px;
 }
 
-.clients-link {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  fill: #8e8f99;
-}
 /* .clients-link:is(:hover, :focus) {
   
 } */
@@ -523,8 +523,7 @@ body {
   background-color: var(--main-color);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:is(:hover, :focus) {
   background-color: #31d0aa;
 }
 
